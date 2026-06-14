@@ -1,0 +1,21 @@
+{
+  "position": {
+    "active": false,
+    "side": null,
+    "entry": null,
+    "stop": null,
+    "target": null,
+    "order_id": null,
+    "qty": null,
+    "time": null
+  },
+  "stats": {
+    "total_trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "total_pnl": 0.0,
+    "daily_loss": 0.0,
+    "last_reset_date": "2026-06-14"
+  },
+  "last_heartbeat": "2026-06-14 20:16:41.627160"
+}

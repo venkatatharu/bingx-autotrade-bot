@@ -1,0 +1,126 @@
+2026-06-13 15:56:33,300 | INFO | 🚀 Starting bot scheduler...
+2026-06-13 15:56:38,319 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 15:56:38,322 | INFO | ==================================================
+2026-06-13 15:56:38,322 | INFO | 🤖 Bot cycle | SOL-USDT 1h | PAPER
+2026-06-13 15:56:38,982 | ERROR | ❌ Bot cycle error: Cannot convert non-finite values (NA or inf) to integer: Error while type casting for column 'timestamp'
+Traceback (most recent call last):
+  File "C:\Users\avulu\OneDrive\Desktop\bingx bot\bingx_autotrade_bot.py", line 414, in run_bot
+    df     = fetch_candles()
+  File "C:\Users\avulu\OneDrive\Desktop\bingx bot\bingx_autotrade_bot.py", line 200, in fetch_candles
+    df = df.astype({"timestamp":"int64","open":"float","high":"float",
+                    "low":"float","close":"float","volume":"float"})
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 6639, in astype
+    res_col = col.astype(dtype=cdt, copy=copy, errors=errors)
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 6662, in astype
+    new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\managers.py", line 430, in astype
+    return self.apply(
+           ~~~~~~~~~~^
+        "astype",
+        ^^^^^^^^^
+    ...<3 lines>...
+        using_cow=using_copy_on_write(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\managers.py", line 363, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\internals\blocks.py", line 784, in astype
+    new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\dtypes\astype.py", line 237, in astype_array_safe
+    new_values = astype_array(values, dtype, copy=copy)
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\dtypes\astype.py", line 182, in astype_array
+    values = _astype_nansafe(values, dtype, copy=copy)
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\dtypes\astype.py", line 101, in _astype_nansafe
+    return _astype_float_to_int_nansafe(arr, dtype, copy)
+  File "C:\Users\avulu\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\dtypes\astype.py", line 145, in _astype_float_to_int_nansafe
+    raise IntCastingNaNError(
+        "Cannot convert non-finite values (NA or inf) to integer"
+    )
+pandas.errors.IntCastingNaNError: Cannot convert non-finite values (NA or inf) to integer: Error while type casting for column 'timestamp'
+
+2026-06-13 15:56:40,388 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 15:56:41,786 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 15:57:55,731 | INFO | 🚀 Starting bot scheduler...
+2026-06-13 15:57:57,210 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 15:57:57,214 | INFO | ==================================================
+2026-06-13 15:57:57,214 | INFO | 🤖 Bot cycle | SOL-USDT 1h | PAPER
+2026-06-13 15:57:57,891 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $67.373 | RSI6: 64.5
+2026-06-13 15:57:57,891 | INFO | ⏳ No signal
+2026-06-13 15:57:59,379 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 15:59:59,933 | INFO | 🚀 Starting bot scheduler...
+2026-06-13 16:00:01,354 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 16:00:01,358 | INFO | ==================================================
+2026-06-13 16:00:01,358 | INFO | 🤖 Bot cycle | SOL-USDT 1h | LIVE
+2026-06-13 16:00:01,811 | WARNING | ⚠️ Attempt 1/5 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)) — retrying in 5s
+2026-06-13 16:00:07,323 | WARNING | ⚠️ Attempt 2/5 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)) — retrying in 10s
+2026-06-13 16:00:17,890 | WARNING | ⚠️ Attempt 3/5 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)) — retrying in 20s
+2026-06-13 16:00:39,037 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $67.369 | RSI6: 64.36
+2026-06-13 16:00:39,037 | INFO | ⏳ No signal
+2026-06-13 16:00:40,484 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 16:07:05,275 | INFO | 🚀 Starting bot scheduler...
+2026-06-13 16:07:06,823 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 16:07:06,825 | INFO | ==================================================
+2026-06-13 16:07:06,826 | INFO | 🤖 Bot cycle | SOL-USDT 1h | LIVE
+2026-06-13 16:07:08,055 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $67.449 | RSI6: 67.67
+2026-06-13 16:07:08,055 | INFO | ⏳ No signal
+2026-06-13 16:07:09,514 | INFO | 📲 Telegram error: {"ok":false,"error_code":400,"description":"Bad Request: chat not found"}
+2026-06-13 16:26:43,115 | INFO | 🚀 Starting bot scheduler...
+2026-06-13 16:26:44,708 | INFO | 📲 Telegram sent
+2026-06-13 16:26:44,713 | INFO | ==================================================
+2026-06-13 16:26:44,713 | INFO | 🤖 Bot cycle | SOL-USDT 1h | LIVE
+2026-06-13 16:26:46,405 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $67.326 | RSI6: 63.3
+2026-06-13 16:26:46,405 | INFO | ⏳ No signal
+2026-06-13 16:26:47,843 | INFO | 📲 Telegram sent
+2026-06-13 16:56:47,437 | INFO | 📲 Telegram sent
+2026-06-13 17:26:45,509 | INFO | ==================================================
+2026-06-13 17:26:45,541 | INFO | 🤖 Bot cycle | SOL-USDT 1h | LIVE
+2026-06-13 17:26:47,829 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $67.816 | RSI6: 77.37
+2026-06-13 17:26:47,829 | INFO | ⏳ No signal
+2026-06-13 17:26:50,267 | INFO | 📲 Telegram sent
+2026-06-13 17:56:53,756 | INFO | 📲 Telegram sent
+2026-06-13 19:13:43,605 | INFO | ==================================================
+2026-06-13 19:13:44,128 | INFO | 🤖 Bot cycle | SOL-USDT 1h | LIVE
+2026-06-13 19:13:45,152 | WARNING | ⚠️ Attempt 1/5 failed: HTTPSConnectionPool(host='open-api-vst.bingx.com', port=443): Max retries exceeded with url: /openApi/swap/v2/user/positions?timestamp=1781358224345&signature=5a3f0254f54f3cace922f1e1f300b496c1b9a70c6c585bbd6eb54ab1bbb3b205 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027145B98B90>: Failed to resolve 'open-api-vst.bingx.com' ([Errno 11001] getaddrinfo failed)")) — retrying in 5s
+2026-06-13 20:11:47,260 | WARNING | ⚠️ Attempt 2/5 failed: HTTPSConnectionPool(host='open-api-vst.bingx.com', port=443): Max retries exceeded with url: /openApi/swap/v2/user/positions?timestamp=1781361705823&signature=36e8b73169bd666aa8113bb3e7afaced9f9708468afaab1154cd105146d2b1f6 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027145B9A490>: Failed to resolve 'open-api-vst.bingx.com' ([Errno 11001] getaddrinfo failed)")) — retrying in 10s
+2026-06-13 20:12:03,469 | WARNING | ⚠️ Attempt 3/5 failed: BingX API [109400]: timestamp is invalid — retrying in 20s
+2026-06-13 20:12:29,471 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $68.146 | RSI6: 83.77
+2026-06-13 20:12:29,492 | INFO | ⏳ No signal
+2026-06-13 20:12:31,601 | INFO | 📲 Telegram sent
+2026-06-13 20:14:58,868 | INFO | 🚀 Starting bot scheduler...
+2026-06-13 20:15:00,144 | INFO | 📲 Telegram sent
+2026-06-13 20:15:00,146 | INFO | ==================================================
+2026-06-13 20:15:00,147 | INFO | 🤖 Bot cycle | SOL-USDT 1h | LIVE
+2026-06-13 20:15:01,639 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $68.099 | RSI6: 82.97
+2026-06-13 20:15:01,639 | INFO | ⏳ No signal
+2026-06-13 20:15:02,771 | INFO | 📲 Telegram sent
+2026-06-14 18:11:17,160 | INFO | 🚀 Starting bot scheduler...
+2026-06-14 18:11:18,947 | INFO | 📲 Telegram sent
+2026-06-14 18:11:18,952 | INFO | ==================================================
+2026-06-14 18:11:18,952 | INFO | 🤖 Bot cycle | SOL-USDT 1h | LIVE
+2026-06-14 18:11:18,952 | INFO | 🔄 New day — resetting daily loss counter
+2026-06-14 18:11:21,259 | INFO | Signal: NEUTRAL | Confidence: 0% | Price: $67.812 | RSI6: 27.21
+2026-06-14 18:11:21,262 | INFO | ⏳ No signal
+2026-06-14 18:11:23,819 | INFO | 📲 Telegram sent
+2026-06-14 19:41:55,085 | INFO | Starting bot scheduler...
+2026-06-14 19:41:56,746 | INFO | Telegram sent
+2026-06-14 19:41:56,750 | INFO | =======================================================
+2026-06-14 19:41:56,750 | INFO | Bot cycle | SOL-USDT 1h | LIVE | LIVE API
+2026-06-14 19:41:57,762 | WARNING | Attempt 1/5 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)) — retry in 5s
+2026-06-14 19:45:21,760 | INFO | Starting bot scheduler...
+2026-06-14 19:45:23,182 | INFO | Telegram sent
+2026-06-14 19:45:23,187 | INFO | =======================================================
+2026-06-14 19:45:23,187 | INFO | Bot cycle | SOL-USDT 1h | LIVE | DEMO API
+2026-06-14 19:45:25,126 | INFO | Balance: $200000.00 USDT
+2026-06-14 19:45:25,840 | INFO | Signal: NEUTRAL | Conf:0% | $67.675 | RSI6:23.67
+2026-06-14 19:45:25,840 | INFO | No signal — waiting for next cycle
+2026-06-14 19:45:27,379 | INFO | Telegram sent
+2026-06-14 19:46:37,924 | INFO | Starting bot scheduler...
+2026-06-14 19:46:39,491 | INFO | Telegram sent
+2026-06-14 19:46:39,495 | INFO | =======================================================
+2026-06-14 19:46:39,496 | INFO | Bot cycle | SOL-USDT 1h | LIVE | DEMO API
+2026-06-14 19:46:41,048 | INFO | Balance: $200000.00 USDT
+2026-06-14 19:46:41,740 | INFO | Signal: NEUTRAL | Conf:0% | $67.623 | RSI6:22.3
+2026-06-14 19:46:41,741 | INFO | No signal — waiting for next cycle
+2026-06-14 19:46:43,177 | INFO | Telegram sent
+2026-06-14 20:16:41,613 | INFO | Telegram sent
